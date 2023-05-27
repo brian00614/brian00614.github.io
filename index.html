@@ -19,7 +19,7 @@
 <body>
   <div class="container">
     <div class="centered">
-      <h2 style="font-size: 36px; line-height: 1px;">OS countdown</h2>
+      <h2 style="font-size: 36px; line-height: 36px;">OS countdown</h2>
       <h2 style="font-size: 36px; line-height: 1px;">距離病房脫出還有</h2>
       <h2 style="font-size: 36px;" id="countdown"></h2>
     </div>
@@ -40,7 +40,7 @@
 
       if (timeLeft <= 0) {
         clearInterval(countdownInterval); // 如果時間到達，停止倒數計時
-        document.getElementById("countdown").innerHTML = "時間到！"; // 顯示時間到達的訊息
+        document.getElementById("countdown").innerHTML = "恭喜脫離苦海"; // 顯示時間到達的訊息
       }
     }
 
