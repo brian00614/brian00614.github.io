@@ -3,8 +3,10 @@
 <style>
   .centered {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   }
   body {
   display: flex;
@@ -15,10 +17,13 @@
 </style>
 </head>
 <body>
-  <h2 class="centered">OS countdown</h2><br>
-  <h2 class="centered">距離病房脫出還有</h2><br>
-  <h1 class="centered" id="countdown"></h1>
-
+  <div class="container">
+    <div class="centered">
+      <h2>OS countdown</h2>
+      <h2>距離病房脫出還有</h2>
+      <h1 id="countdown"></h1>
+    </div>
+  </div>
   <script>
     function countdown() {
       var endDate = new Date("2023-07-15T23:59:00"); // 設定結束日期和時間
