@@ -38,7 +38,7 @@
       var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)); // 計算剩餘分鐘
       var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000); // 計算剩餘秒數
 
-      var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s"; // 倒數計時文字
+      var countdownText = days + "d "/* + hours + "h " + minutes + "m " + seconds + "s"*/; // 倒數計時文字
       document.getElementById("countdown").innerHTML = countdownText; // 將倒數計時顯示在網頁上
 
       if (timeLeft <= 0) {
